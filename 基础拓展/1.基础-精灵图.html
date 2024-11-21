@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 32px;
+            height: 42px;
+            background-color: pink;
+            background-image: url(./image/精灵图.png);
+            /* 背景图位置属性：改变背景图位置 */
+            /* 水平方向位置，垂直方向位置 */
+            /*想要向左偏移的位置,位置取负数 */
+            background-position: -6px -4px;
+        }
+
+        b{
+            display: block;
+            width: 40px;
+            height: 42px;
+            background-image: url(./image/精灵图.png);
+            background-position: -2px -155px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 空间换时间，将多个要使用的图片组合在一起，可以减少浏览器返还图片数据的时间 -->
+    <!-- 精灵图使用的都是行内标签 span i  b 等等 -->
+    <span></span>
+
+    <b></b>
+</body>
+</html>

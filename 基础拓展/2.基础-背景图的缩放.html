@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图的缩放</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(./image/照片1.png);
+            background-repeat: no-repeat;
+            /* background-size: 300px; */
+
+            /* 盒子自身的百分比 */
+            /* background-size: 50%; */
+
+            /* 如果盒子宽高某一个跟盒子相同了,.另一个也会停止缩放--导致可能会有留白 */
+            /* background-size: contain; */
+
+            /* 保证完全覆盖盒子,但是仍然等比例缩放,导致图片可能显示不全 */
+            background-size: cover;
+
+            /* 工作中一般盒子跟图片的比例是相同的,此时,cover跟contain的效果完全相同 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       
+    </div>
+</body>
+</html>

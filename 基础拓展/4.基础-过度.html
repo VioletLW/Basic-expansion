@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过度</title>
+    <style>
+        /* 过度配合hover使用,谁变化谁添加过度属性 */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 宽度200,悬停时高度600,花费1秒钟 */
+            /* 由于变化的是盒子,所以写在盒子里面 */
+            /* transition: 变化的属性 time; */
+            /* transition: width 1s,background-color 1s; */
+            /* all;所有变化的属性 */
+            transition: all 1s;
+        }
+        .box:hover{
+            width: 600px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
